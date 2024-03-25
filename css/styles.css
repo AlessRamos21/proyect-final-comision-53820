@@ -14,36 +14,52 @@ body{
     text-transform: capitalize;
 }
 .logo{
-    text-align: center;
-    margin: 1.5625rem;
+    display: flex;
+    justify-content: center;
 }
 .nav1{
-    text-align: center;
-    margin: .625rem;
+    display: flex;
+    justify-content: center;
 }
 .menu-nav li a{
     margin: 6.25rem;
     color: #535353;
     text-decoration: none;
 }
-.menu-nav li{
-    display: inline-block;
-    margin-bottom: .625rem;
+.menu-nav{
+    display: flex;
+    margin: 5px;
 }
 
 .contenedor-foto {
-    text-align: center;
-    margin: 3.125rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
 }
 .foto1{
     width: 109.375rem;
 }
 .seccion{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.seccion1{
+    display: flex;
 }
 .seccion1 article{
-    display: inline-block;
-    margin: 3.125rem
+    margin: 30px;
+}
+.seccion1 article h3{
+    display: flex;
+    justify-content: center;
+}
+.seccion1 article p{
+    display: flex;
+    justify-content: center;
+}
+.seccion1 article a{
+    display: flex;
+    justify-content: center;
 }
 .container{
     margin: .625rem;
