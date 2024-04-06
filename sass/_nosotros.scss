@@ -1,0 +1,30 @@
+.titulo-comunidad{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 30px;
+    font-size: large;
+    font-size: 60px;
+}
+.container-comunidad{
+    width: 70%;
+    margin: auto;
+}
+.articulo-comunidad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    border-bottom: white 2px dashed;
+}
+.articulo-comunidad p{
+    margin: 25px;
+    padding: 50px;
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.34);
+}
+.articulo-comunidad img{
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+}

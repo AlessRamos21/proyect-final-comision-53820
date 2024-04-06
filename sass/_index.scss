@@ -1,0 +1,73 @@
+.carousel{
+    margin: 60px;
+}
+.seccion{
+    display: flex;
+    justify-content: center;
+}
+.seccion1{
+    display: flex;
+}
+.seccion1 article{
+    margin: 30px;
+}
+.seccion1 article h3{
+    display: flex;
+    justify-content: center;
+}
+.seccion1 article p{
+    display: flex;
+    justify-content: center;
+}
+.seccion1 article a{
+    display: flex;
+    justify-content: center;
+}
+.articulo1 a{
+    display: block;
+    background-color: rgb(149, 165, 166);
+    padding: .9375rem 1.875rem;
+    margin: .625rem;
+    color: white;
+    text-decoration: none;
+}
+.articulo2 a{
+    display: block;
+    background-color: rgb(149, 165, 166);
+    padding: .9375rem 1.875rem;
+    margin: .625rem;
+    color: white;
+    text-decoration: none;
+}
+.articulo3 a{
+    display: block;
+    background-color: rgb(149, 165, 166);
+    padding: .9375rem 1.875rem;
+    margin: .625rem;
+    color: white;
+    text-decoration: none;
+}
+.articulo1 h3{
+    font-size: 1.875rem;
+    margin: 1.5625rem;
+}
+.articulo2 h3{
+    font-size: 1.875rem;
+    margin: 1.5625rem;
+}
+.articulo3 h3{
+    font-size: 1.875rem;
+    margin: 1.5625rem;
+}
+.articulo1{
+    background-color: rgba(0, 0, 0, 0.34);
+    padding: 3.125rem;
+}
+.articulo2{
+    background-color: rgba(0, 0, 0, 0.34);
+    padding: 3.125rem;
+}
+.articulo3{
+    background-color: rgba(0, 0, 0, 0.34);
+    padding: 3.125rem;
+}
