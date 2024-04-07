@@ -275,4 +275,41 @@ body {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  main .seccion section {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 320px) {
+  main .seccion section article {
+    padding: 0.9375rem;
+    margin: 0.3125rem;
+  }
+  main .seccion section article h3 {
+    font-size: 0.75rem;
+  }
+  main .seccion section article p {
+    font-size: 0.5rem;
+    text-align: center;
+  }
+  main .seccion section article a {
+    font-size: 0.5rem;
+  }
+  main section .carousel {
+    margin: 0.9375rem;
+  }
+  footer .footer-row .seccion-footer {
+    margin: 0.375rem;
+  }
+  footer .footer-row .seccion-footer h4 {
+    font-size: 0.75rem;
+  }
+  footer .footer-row .seccion-footer p {
+    font-size: 0.5rem;
+  }
+  footer .footer-row .seccion-footer .quick-links li a {
+    font-size: 0.5rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
