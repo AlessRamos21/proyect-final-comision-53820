@@ -311,5 +311,15 @@ body {
     font-size: 0.5rem;
   }
 }
+@media screen and (max-width: 768px) {
+  main .sector-galeria .container-galeria {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+@media screen and (max-width: 320px) {
+  main .sector-galeria .container-galeria {
+    grid-template-columns: repeat(1, 100%);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

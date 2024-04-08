@@ -1,3 +1,4 @@
+// INDEX
 @media screen and (max-width: 768px){
     main{
         .seccion{
@@ -50,6 +51,25 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+// GALERIA
+@media screen and (max-width: 768px){
+    main{
+        .sector-galeria{
+            .container-galeria{
+                grid-template-columns: repeat(2,50%);
+            }
+        }
+    }
+}
+@media screen and (max-width: 320px){
+    main{
+        .sector-galeria{
+            .container-galeria{
+                grid-template-columns: repeat(1,100%);
             }
         }
     }
