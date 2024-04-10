@@ -1,4 +1,27 @@
 // INDEX
+@media screen and (max-width: 1440px) {
+    main{
+        .seccion{
+            section{
+                article{
+                    text-align: center;
+            }
+        }
+    }
+}
+}
+@media screen and (max-width: 1024px) {
+    main{
+        .seccion{
+            section{
+                flex-direction: column;
+                article{
+                    text-align: center;
+            }
+        }
+    }
+}
+}
 @media screen and (max-width: 768px){
     main{
         .seccion{
@@ -8,8 +31,94 @@
         }
 }
 }
+@media screen and (max-width: 425px) {
+    main{
+        section{
+            .carousel{
+                margin: .625rem;
+                padding: .625rem;
+            }
+        }
+        .seccion{
+            section{
+                flex-direction: column;
+                article{
+                    text-align: center;
+                    padding: .9375rem;
+                    h3{
+                        font-size: 1.25rem;
+                    }
+                    p{
+                        font-size: .875rem;
+                        text-align: center;
+                    }
+                    a{
+                        font-size: .875rem;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .footer-row{
+            .seccion-footer{
+                margin: .25rem;
+                padding: .625rem;
+                h4{
+                    font-size: 1rem;
+                }
+                p{
+                    font-size: .75rem;
+                }
+                .quick-links{
+                    li{
+                        a{
+                            font-size: .75rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px){
+    main{
+        .seccion{
+            section{
+                flex-direction: column;
+                article{
+                    text-align: center;
+                    padding: .9375rem;
+                    h3{
+                        font-size: 1.125rem;
+                    }
+                    p{
+                        font-size: .75rem;
+                        text-align: center;
+                    }
+                    a{
+                        font-size: .75rem;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .footer-row{
+            .seccion-footer{
+                margin: .375rem;
+                padding: .625rem
+            }
+        }
+    }
+}
 @media screen and (max-width: 320px) {
     main{
+        section{
+            .carousel{
+                margin: .9375rem;
+            }
+        }
         .seccion{
             section{
                 article{
@@ -28,16 +137,12 @@
                 }
             }
         }
-        section{
-            .carousel{
-                margin: .9375rem;
-            }
-        }
     }
     footer{
         .footer-row{
             .seccion-footer{
                 margin: .375rem;
+                padding: .625rem
                 h4{
                     font-size: .75rem;
                 }
@@ -73,4 +178,122 @@
             }
         }
     }
+}
+// PLANES
+@media screen and (max-width: 768px){
+    main{
+        .banner-start{
+            h2{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+        }
+        .banner-end{
+            h2{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 425px){
+    main{
+        .banner-start{
+            h2{
+                font-size: 1.375rem;
+            }
+            p{
+                font-size: 1.125rem;
+            }
+        }
+        .sector-plan{
+            .container-planes{
+                .titulo-plan{
+                    font-size: 1.625rem;
+                }
+                h2{
+                    font-size: 1.25rem;
+                }
+                ul{
+                    li{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        .banner-end{
+            h2{
+                font-size: 1.375rem;
+            }
+            p{
+                font-size: 1.125rem;
+            }
+        }   
+    }
+}
+@media screen and (max-width: 375px){
+    main{
+        .banner-start{
+            h2{
+                font-size: 1.125rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+        .sector-plan{
+            .container-planes{
+                .titulo-plan{
+                    font-size: 1.375rem;
+                }
+                h2{
+                    font-size: 1rem;
+                }
+                ul{
+                    li{
+                        font-size: .75rem;
+                    }
+                }
+            }
+        }
+        .banner-end{
+            h2{
+                font-size: 1.125rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }   
+    }
+}
+@media screen and (max-width: 320px){
+    main{
+        .banner-start{
+            h2{
+                font-size: 1rem;
+            }
+            p{
+                font-size: .75rem;
+            }
+        }
+        .sector-plan{
+            .container-planes{
+                .titulo-plan{
+                    font-size: 1.125rem;
+            }
+        }
+        .banner-end{
+            h2{
+                font-size: 1rem;
+            }
+            p{
+                font-size: .75rem;
+            }
+        }   
+    }
+}
 }

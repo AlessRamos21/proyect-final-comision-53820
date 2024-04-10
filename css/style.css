@@ -234,6 +234,44 @@ body {
   grid-template-columns: repeat(4, 25%);
 }
 
+.banner-start {
+  width: 100%;
+  background-image: url("../assets/img/banner-1.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 1.875rem;
+}
+.banner-start h2 {
+  font-size: 2.25rem;
+  margin-bottom: 0.625rem;
+  margin-top: 0.9375rem;
+}
+.banner-start p {
+  font-size: 1.75rem;
+}
+
+.banner-end {
+  width: 100%;
+  background-image: url("../assets/img/banner-2.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 1.875rem;
+}
+.banner-end h2 {
+  font-size: 2.25rem;
+  margin-bottom: 0.625rem;
+  margin-top: 0.9375rem;
+}
+.banner-end p {
+  font-size: 1.75rem;
+}
+
 .titulo-plan {
   display: flex;
   justify-content: center;
@@ -275,12 +313,87 @@ body {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 1440px) {
+  main .seccion section article {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main .seccion section {
+    flex-direction: column;
+  }
+  main .seccion section article {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 768px) {
   main .seccion section {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 425px) {
+  main section .carousel {
+    margin: 0.625rem;
+    padding: 0.625rem;
+  }
+  main .seccion section {
+    flex-direction: column;
+  }
+  main .seccion section article {
+    text-align: center;
+    padding: 0.9375rem;
+  }
+  main .seccion section article h3 {
+    font-size: 1.25rem;
+  }
+  main .seccion section article p {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  main .seccion section article a {
+    font-size: 0.875rem;
+  }
+  footer .footer-row .seccion-footer {
+    margin: 0.25rem;
+    padding: 0.625rem;
+  }
+  footer .footer-row .seccion-footer h4 {
+    font-size: 1rem;
+  }
+  footer .footer-row .seccion-footer p {
+    font-size: 0.75rem;
+  }
+  footer .footer-row .seccion-footer .quick-links li a {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  main .seccion section {
+    flex-direction: column;
+  }
+  main .seccion section article {
+    text-align: center;
+    padding: 0.9375rem;
+  }
+  main .seccion section article h3 {
+    font-size: 1.125rem;
+  }
+  main .seccion section article p {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  main .seccion section article a {
+    font-size: 0.75rem;
+  }
+  footer .footer-row .seccion-footer {
+    margin: 0.375rem;
+    padding: 0.625rem;
+  }
+}
 @media screen and (max-width: 320px) {
+  main section .carousel {
+    margin: 0.9375rem;
+  }
   main .seccion section article {
     padding: 0.9375rem;
     margin: 0.3125rem;
@@ -295,14 +408,9 @@ body {
   main .seccion section article a {
     font-size: 0.5rem;
   }
-  main section .carousel {
-    margin: 0.9375rem;
-  }
   footer .footer-row .seccion-footer {
     margin: 0.375rem;
-  }
-  footer .footer-row .seccion-footer h4 {
-    font-size: 0.75rem;
+    padding: 0.625rem;
   }
   footer .footer-row .seccion-footer p {
     font-size: 0.5rem;
@@ -319,6 +427,83 @@ body {
 @media screen and (max-width: 320px) {
   main .sector-galeria .container-galeria {
     grid-template-columns: repeat(1, 100%);
+  }
+}
+@media screen and (max-width: 768px) {
+  main .banner-start h2 {
+    font-size: 2rem;
+  }
+  main .banner-start p {
+    font-size: 1.5rem;
+  }
+  main .banner-end h2 {
+    font-size: 2rem;
+  }
+  main .banner-end p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .banner-start h2 {
+    font-size: 1.375rem;
+  }
+  main .banner-start p {
+    font-size: 1.125rem;
+  }
+  main .sector-plan .container-planes .titulo-plan {
+    font-size: 1.625rem;
+  }
+  main .sector-plan .container-planes h2 {
+    font-size: 1.25rem;
+  }
+  main .sector-plan .container-planes ul li {
+    font-size: 1rem;
+  }
+  main .banner-end h2 {
+    font-size: 1.375rem;
+  }
+  main .banner-end p {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  main .banner-start h2 {
+    font-size: 1.125rem;
+  }
+  main .banner-start p {
+    font-size: 1rem;
+  }
+  main .sector-plan .container-planes .titulo-plan {
+    font-size: 1.375rem;
+  }
+  main .sector-plan .container-planes h2 {
+    font-size: 1rem;
+  }
+  main .sector-plan .container-planes ul li {
+    font-size: 0.75rem;
+  }
+  main .banner-end h2 {
+    font-size: 1.125rem;
+  }
+  main .banner-end p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  main .banner-start h2 {
+    font-size: 1rem;
+  }
+  main .banner-start p {
+    font-size: 0.75rem;
+  }
+  main .sector-plan .container-planes .titulo-plan {
+    font-size: 1.125rem;
+  }
+  main .sector-plan .banner-end h2 {
+    font-size: 1rem;
+  }
+  main .sector-plan .banner-end p {
+    font-size: 0.75rem;
   }
 }
 
