@@ -1,70 +1,104 @@
-.banner-start{
-    width: 100%;
-            background-image: url(../assets/img/banner-1.jpeg);
-            background-size: cover;
-            background-position: center;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 1.875rem;
-    h2 {
-        font-size: 2.25rem;
-        margin-bottom: .625rem;
-        margin-top: .9375rem;
-    }
-    p {
-        font-size: 1.75rem;
-    }
-}
-.banner-end{
-    width: 100%;
-            background-image: url('../assets/img/banner-2.jpeg');
-            background-size: cover;
-            background-position: center;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-bottom: 1.875rem;
-    h2 {
-        font-size: 2.25rem;
-        margin-bottom: .625rem;
-        margin-top: .9375rem;
-    }
-    p {
-        font-size: 1.75rem;
-    }
-}
-.titulo-plan{
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-    padding: 25px;
-}
-.plan h2{
-    padding-bottom: 10px;
-}
-.container-planes{
-    max-width: 1200px;
-    margin: 60px auto;
-    padding: 20px;
-    background-color:  rgba(0, 0, 0, 0.34);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.plan{
+@mixin planes ($fondo){
+    background-color: $fondo;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 35px;
     margin: 40px;
     margin-bottom: 80px;
 }
-.plan h2{
-    color: white;
-}
-.plan ul{
-    list-style: none;
-    padding: 0;
-}
-.plan li {
-    margin-bottom: 10px;
+main{
+    .banner-start{
+        width: 100%;
+                background-image: url(../assets/img/banner-1.jpeg);
+                background-size: cover;
+                background-position: center;
+                color: $letra-color;
+                text-align: center;
+                padding: 20px 0;
+                margin-top: 1.875rem;
+        h2 {
+            font-size: 2.25rem;
+            margin-bottom: .625rem;
+            margin-top: .9375rem;
+        }
+        p {
+            font-size: 1.75rem;
+        }
+    }
+    section{
+        .container-planes{
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 20px;
+            background-color: $fondo-articulo;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            .titulo-plan{
+                display: flex;
+            justify-content: center;
+            margin: 20px;
+            padding: 25px;
+            }
+            .plan-basico{
+                @include planes (#423F3E);
+                h2{
+                    padding-bottom: 10px;
+                    color: $letra-color;
+                }
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    li{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .plan-premium{
+                @include planes (#171010);
+                h2{
+                    padding-bottom: 10px;
+                    color: $letra-color;
+                }
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    li{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .plan-anual{
+                @include planes (#362222);
+                h2{
+                    padding-bottom: 10px;
+                    color: $letra-color;
+                }
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    li{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .banner-end{
+        width: 100%;
+                background-image: url('../assets/img/banner-2.jpeg');
+                background-size: cover;
+                background-position: center;
+                color: $letra-color;
+                text-align: center;
+                padding: 20px 0;
+                margin-bottom: 1.875rem;
+        h2 {
+            font-size: 2.25rem;
+            margin-bottom: .625rem;
+            margin-top: .9375rem;
+        }
+        p {
+            font-size: 1.75rem;
+        }
+    }
 }

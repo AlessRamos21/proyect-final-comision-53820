@@ -1,24 +1,24 @@
-.titulo-galeria{
-    display: flex;
-    justify-content: center;
-    margin-top: 3.125rem;
-    font-size: 60px;
-}
-.sector-galeria{
-    margin: 60px;
-}
-.container-galeria{
-    width: 100%;
-    margin: auto;
-}
-.gym-columna img{
-    width: 100%;
-    height: 100%;
-}
-.gym-columna{
-    margin: 10px;
-}
-.sector-galeria .container-galeria{
-    display: grid;
-    grid-template-columns: repeat(4,25%);
+main{
+    .titulo-galeria{
+        display: flex;
+        justify-content: center;
+        margin-top: 3.125rem;
+        font-size: 60px;
+    }
+    .sector-galeria{
+        margin: 60px;
+        .container-galeria{
+            display: grid;
+            grid-template-columns: repeat(4,25%);
+            width: 100%;
+            margin: auto;
+            .gym-columna{
+                margin: 10px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
 }

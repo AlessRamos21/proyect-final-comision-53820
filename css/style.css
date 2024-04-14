@@ -31,70 +31,60 @@ body {
 
 .footer {
   background-color: #1a1a1a;
-  color: #fff;
+  color: white;
   padding: 30px 0;
 }
-
-.footer-row {
+.footer .container-footer .footer-row {
   display: flex;
   justify-content: space-evenly;
 }
-
-.footer h4 {
-  color: #fff;
+.footer .container-footer .footer-row .seccion-footer h4 {
+  color: white;
   margin-bottom: 15px;
 }
-
-.footer p {
+.footer .container-footer .footer-row .seccion-footer p {
   margin-bottom: 10px;
 }
-
-.footer .quick-links {
+.footer .container-footer .footer-row .quick-links {
   list-style: none;
   padding: 0;
 }
-
-.footer .quick-links li {
+.footer .container-footer .footer-row .quick-links li {
   margin-bottom: 8px;
 }
-
-.footer .quick-links li a {
-  color: #fff;
+.footer .container-footer .footer-row .quick-links li a {
+  color: white;
 }
 
-.carousel {
+main section .carousel {
   margin: 60px;
 }
-
-.seccion {
+main .seccion {
   display: flex;
   justify-content: center;
 }
-
-.seccion1 {
+main .seccion section {
   display: flex;
 }
-
-.seccion1 article {
+main .seccion section article {
   margin: 30px;
+  background-color: rgba(0, 0, 0, 0.34);
+  padding: 3.125rem;
+  text-align: center;
 }
-
-.seccion1 article h3 {
+main .seccion section article h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.875rem;
+  margin: 1.5625rem;
+}
+main .seccion section article p {
   display: flex;
   justify-content: center;
 }
-
-.seccion1 article p {
+main .seccion section article a {
   display: flex;
   justify-content: center;
-}
-
-.seccion1 article a {
-  display: flex;
-  justify-content: center;
-}
-
-.articulo1 a {
   display: block;
   background-color: rgb(149, 165, 166);
   padding: 0.9375rem 1.875rem;
@@ -103,63 +93,14 @@ body {
   text-decoration: none;
 }
 
-.articulo2 a {
-  display: block;
-  background-color: rgb(149, 165, 166);
-  padding: 0.9375rem 1.875rem;
-  margin: 0.625rem;
-  color: white;
-  text-decoration: none;
-}
-
-.articulo3 a {
-  display: block;
-  background-color: rgb(149, 165, 166);
-  padding: 0.9375rem 1.875rem;
-  margin: 0.625rem;
-  color: white;
-  text-decoration: none;
-}
-
-.articulo1 h3 {
-  font-size: 1.875rem;
-  margin: 1.5625rem;
-}
-
-.articulo2 h3 {
-  font-size: 1.875rem;
-  margin: 1.5625rem;
-}
-
-.articulo3 h3 {
-  font-size: 1.875rem;
-  margin: 1.5625rem;
-}
-
-.articulo1 {
-  background-color: rgba(0, 0, 0, 0.34);
-  padding: 3.125rem;
-}
-
-.articulo2 {
-  background-color: rgba(0, 0, 0, 0.34);
-  padding: 3.125rem;
-}
-
-.articulo3 {
-  background-color: rgba(0, 0, 0, 0.34);
-  padding: 3.125rem;
-}
-
-.sector-item {
+main .sector-container .sector-item {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 1.875rem;
 }
-
-.item-logo {
-  background-color: grey;
+main .sector-container .sector-item .item-logo {
+  background-color: rgba(0, 0, 0, 0.34);
   padding: 3.75rem;
   width: 25rem;
   height: 25rem;
@@ -167,9 +108,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
-.titulo-comunidad {
+main .titulo-comunidad {
   display: flex;
   justify-content: center;
   margin-top: 50px;
@@ -177,113 +119,77 @@ body {
   font-size: large;
   font-size: 60px;
 }
-
-.container-comunidad {
+main section .container-comunidad {
   width: 70%;
   margin: auto;
 }
-
-.articulo-comunidad {
+main section .container-comunidad .articulo-comunidad {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 50px;
   border-bottom: white 2px dashed;
 }
-
-.articulo-comunidad p {
-  margin: 25px;
-  padding: 50px;
-  font-size: large;
-  background-color: rgba(0, 0, 0, 0.34);
-}
-
-.articulo-comunidad img {
+main section .container-comunidad .articulo-comunidad img {
   width: 200px;
   height: 200px;
   margin: 50px;
 }
+main section .container-comunidad .articulo-comunidad .parrafo-1, main section .container-comunidad .articulo-comunidad .parrafo-3, main section .container-comunidad .articulo-comunidad .parrafo-2 {
+  margin: 25px;
+  padding: 50px;
+  font-size: large;
+  background-color: rgb(44, 54, 57);
+}
+main section .container-comunidad .articulo-comunidad .parrafo-2 {
+  background-color: rgb(63, 78, 79);
+}
+main section .container-comunidad .articulo-comunidad .parrafo-3 {
+  background-color: rgb(44, 54, 57);
+}
 
-.titulo-galeria {
+main .titulo-galeria {
   display: flex;
   justify-content: center;
   margin-top: 3.125rem;
   font-size: 60px;
 }
-
-.sector-galeria {
+main .sector-galeria {
   margin: 60px;
 }
-
-.container-galeria {
+main .sector-galeria .container-galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
   width: 100%;
   margin: auto;
 }
-
-.gym-columna img {
+main .sector-galeria .container-galeria .gym-columna {
+  margin: 10px;
+}
+main .sector-galeria .container-galeria .gym-columna img {
   width: 100%;
   height: 100%;
 }
 
-.gym-columna {
-  margin: 10px;
-}
-
-.sector-galeria .container-galeria {
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-}
-
-.banner-start {
+main .banner-start {
   width: 100%;
   background-image: url(../assets/img/banner-1.jpeg);
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: white;
   text-align: center;
   padding: 20px 0;
   margin-top: 1.875rem;
 }
-.banner-start h2 {
+main .banner-start h2 {
   font-size: 2.25rem;
   margin-bottom: 0.625rem;
   margin-top: 0.9375rem;
 }
-.banner-start p {
+main .banner-start p {
   font-size: 1.75rem;
 }
-
-.banner-end {
-  width: 100%;
-  background-image: url("../assets/img/banner-2.jpeg");
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  margin-bottom: 1.875rem;
-}
-.banner-end h2 {
-  font-size: 2.25rem;
-  margin-bottom: 0.625rem;
-  margin-top: 0.9375rem;
-}
-.banner-end p {
-  font-size: 1.75rem;
-}
-
-.titulo-plan {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-  padding: 25px;
-}
-
-.plan h2 {
-  padding-bottom: 10px;
-}
-
-.container-planes {
+main section .container-planes {
   max-width: 1200px;
   margin: 60px auto;
   padding: 20px;
@@ -291,31 +197,94 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-.plan {
+main section .container-planes .titulo-plan {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 25px;
+}
+main section .container-planes .plan-basico {
+  background-color: #423F3E;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 35px;
   margin: 40px;
   margin-bottom: 80px;
 }
-
-.plan h2 {
+main section .container-planes .plan-basico h2 {
+  padding-bottom: 10px;
   color: white;
 }
-
-.plan ul {
+main section .container-planes .plan-basico ul {
   list-style: none;
   padding: 0;
 }
-
-.plan li {
+main section .container-planes .plan-basico ul li {
   margin-bottom: 10px;
+}
+main section .container-planes .plan-premium {
+  background-color: #171010;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 35px;
+  margin: 40px;
+  margin-bottom: 80px;
+}
+main section .container-planes .plan-premium h2 {
+  padding-bottom: 10px;
+  color: white;
+}
+main section .container-planes .plan-premium ul {
+  list-style: none;
+  padding: 0;
+}
+main section .container-planes .plan-premium ul li {
+  margin-bottom: 10px;
+}
+main section .container-planes .plan-anual {
+  background-color: #362222;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 35px;
+  margin: 40px;
+  margin-bottom: 80px;
+}
+main section .container-planes .plan-anual h2 {
+  padding-bottom: 10px;
+  color: white;
+}
+main section .container-planes .plan-anual ul {
+  list-style: none;
+  padding: 0;
+}
+main section .container-planes .plan-anual ul li {
+  margin-bottom: 10px;
+}
+main .banner-end {
+  width: 100%;
+  background-image: url("../assets/img/banner-2.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 1.875rem;
+}
+main .banner-end h2 {
+  font-size: 2.25rem;
+  margin-bottom: 0.625rem;
+  margin-top: 0.9375rem;
+}
+main .banner-end p {
+  font-size: 1.75rem;
 }
 
 @media screen and (max-width: 1440px) {
   main .seccion section article {
     text-align: center;
+  }
+  main .seccion section article p {
+    font-size: 0.875rem;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -344,7 +313,7 @@ body {
     padding: 0.9375rem;
   }
   main .seccion section article h3 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
   main .seccion section article p {
     font-size: 0.875rem;
@@ -376,7 +345,7 @@ body {
     padding: 0.9375rem;
   }
   main .seccion section article h3 {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
   main .seccion section article p {
     font-size: 0.75rem;
