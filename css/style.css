@@ -201,19 +201,20 @@ main .parrafo-sector {
   font-size: 16px;
   color: white;
   line-height: 1.6;
-  max-width: 800px;
   margin-left: 3.125rem;
   padding: 0.625rem;
   text-align: left;
 }
 main .sectores {
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 10px;
 }
 main .sectores section {
   background-color: #1a1a1a;
   padding: 20px;
+  width: 70%;
   border-radius: 8px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   margin: 20px;
@@ -557,7 +558,8 @@ main .banner-end p {
 }
 @media screen and (max-width: 1024) {
   main .sectores {
-    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 768px) {

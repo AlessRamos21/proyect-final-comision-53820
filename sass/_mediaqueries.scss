@@ -216,7 +216,8 @@
 @media screen and (max-width: 1024){
     main{
         .sectores{
-            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+            grid-template-columns: 1fr;
         }
     }
 }
@@ -238,6 +239,10 @@
             }
         }
     }
+}
+// NOSOTROS
+@media screen and (max-width: 425px){
+
 }
 // PLANES
 @media screen and (max-width: 768px){
