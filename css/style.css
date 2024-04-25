@@ -62,10 +62,11 @@ body {
   color: white;
 }
 
-main section .carousel .container-fluid {
+section .carousel .container-fluid {
   height: 85vh;
 }
-main h1 {
+
+h1 {
   font-size: 36px;
   color: white;
   text-align: center;
@@ -74,7 +75,8 @@ main h1 {
   padding: 20px;
   border-bottom: 2px solid #e0e0e0;
 }
-main .parrafo-principal {
+
+.parrafo-principal {
   font-size: 18px;
   color: white;
   text-align: center;
@@ -83,7 +85,8 @@ main .parrafo-principal {
   line-height: 1.5;
   padding: 0 20px;
 }
-main .item-index {
+
+.item-index {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 7.5rem;
@@ -91,37 +94,38 @@ main .item-index {
   max-width: 800px;
   margin: 40px auto;
 }
-main .item-index .item-seccion {
+.item-index .item-seccion {
   padding: 20px;
   border-radius: 12px;
   background-color: #1a1a1a;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
-main .item-index .item-seccion:hover {
+.item-index .item-seccion:hover {
   transform: translateY(-5px);
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.15);
 }
-main .item-index .item-seccion h3 {
+.item-index .item-seccion h3 {
   font-size: 24px;
   color: white;
   margin-bottom: 15px;
   border-bottom: 2px solid #e0e0e0;
   padding-bottom: 10px;
 }
-main .item-index .item-seccion ul {
+.item-index .item-seccion ul {
   list-style-type: none;
   padding-left: 0;
   line-height: 1.6;
 }
-main .item-index .item-seccion ul li {
+.item-index .item-seccion ul li {
   padding: 10px 0;
   border-bottom: 1px solid #e0e0e0;
 }
-main .item-index .item-seccion ul li strong {
+.item-index .item-seccion ul li strong {
   color: #E6E6FA;
 }
-main .banner-index {
+
+.banner-index {
   width: 100%;
   background-image: url(../assets/img/banner-1.jpeg);
   background-size: cover;
@@ -131,7 +135,7 @@ main .banner-index {
   padding: 20px 0;
   margin-top: 1.875rem;
 }
-main .banner-index .cta-button {
+.banner-index .cta-button {
   display: inline-block;
   padding: 12px 24px;
   background-color: #333;
@@ -142,42 +146,43 @@ main .banner-index .cta-button {
   transition: background-color 0.3s, transform 0.3s;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
-main .banner-index .cta-button:hover {
+.banner-index .cta-button:hover {
   background-color: #555;
   transform: translateY(-2px);
 }
-main .banner-index h2 {
+.banner-index h2 {
   font-size: 2.25rem;
   margin-bottom: 0.625rem;
   margin-top: 0.9375rem;
 }
-main .banner-index p {
+.banner-index p {
   font-size: 1.75rem;
 }
-main .seccion {
+
+.seccion {
   display: flex;
   justify-content: center;
 }
-main .seccion section {
+.seccion section {
   display: flex;
 }
-main .seccion section article {
+.seccion section article {
   margin: 30px;
   background-color: rgba(0, 0, 0, 0.34);
   padding: 3.125rem;
   text-align: center;
 }
-main .seccion section article h3 {
+.seccion section article h3 {
   display: flex;
   justify-content: center;
   font-size: 1.875rem;
   margin: 1.5625rem;
 }
-main .seccion section article p {
+.seccion section article p {
   display: flex;
   justify-content: center;
 }
-main .seccion section article a {
+.seccion section article a {
   display: flex;
   justify-content: center;
   display: block;
@@ -188,7 +193,7 @@ main .seccion section article a {
   text-decoration: none;
 }
 
-main .titulo-sector {
+.titulo-sector {
   font-size: 24px;
   color: white;
   font-weight: 700;
@@ -197,21 +202,24 @@ main .titulo-sector {
   border-bottom: 2px solid #e0e0e0;
   padding: 10px;
 }
-main .parrafo-sector {
+
+.parrafo-sector {
   font-size: 16px;
   color: white;
   line-height: 1.6;
-  margin-left: 3.125rem;
+  margin-left: 2.1875rem;
+  margin-right: 3.125rem;
   padding: 0.625rem;
   text-align: left;
 }
-main .sectores {
+
+.sectores {
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
-main .sectores section {
+.sectores section {
   background-color: #1a1a1a;
   padding: 20px;
   width: 70%;
@@ -220,31 +228,31 @@ main .sectores section {
   margin: 20px;
   transition: transform 0.3s ease;
 }
-main .sectores section:hover {
+.sectores section:hover {
   transform: translateY(-5px);
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
 }
-main .sectores section h2 {
+.sectores section h2 {
   font-size: 24px;
   color: white;
   margin-bottom: 10px;
   font-weight: bold;
 }
-main .sectores section img {
+.sectores section img {
   width: 100%;
   height: 31.25rem;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
 }
-main .sectores section p {
+.sectores section p {
   font-size: 14px;
   color: white;
   line-height: 1.4;
   margin: 0;
 }
 
-main .nosotros {
+.nosotros {
   max-width: 800px;
   margin: 1.5625rem auto;
   padding: 20px;
@@ -252,76 +260,72 @@ main .nosotros {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgb(83, 81, 81);
 }
-main .nosotros h1 {
+.nosotros h1 {
   margin-top: 0;
   color: white;
 }
-main .nosotros h2 {
+.nosotros h2 {
   color: white;
   margin-top: 30px;
   margin-bottom: 15px;
 }
-main .nosotros p {
+.nosotros p {
   color: white;
   line-height: 1.5;
 }
-main .nosotros .equipo {
+.nosotros .equipo {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 3.125rem;
 }
-main .nosotros .equipo .miembro-equipo {
+.nosotros .equipo .miembro-equipo {
   text-align: center;
-  max-width: 150px;
+  max-width: 18.75rem;
+  margin: 0.625rem;
 }
-main .nosotros .equipo .miembro-equipo img {
+.nosotros .equipo .miembro-equipo img {
   border-radius: 50%;
   width: 100%;
   height: auto;
+  padding: 0.625rem;
 }
-main .nosotros .equipo .miembro-equipo h3 {
+.nosotros .equipo .miembro-equipo h3 {
   color: white;
   margin-top: 10px;
   margin-bottom: 5px;
 }
-main .nosotros .equipo .miembro-equipo p {
+.nosotros .equipo .miembro-equipo p {
   color: white;
 }
-main .nosotros .testimonios blockquote {
+.nosotros .testimonios blockquote {
   margin: 20px 0;
   padding: 10px 20px;
   border-left: 5px solid #ff6b6b;
   background-color: #171010;
 }
-main .nosotros .testimonios blockquote footer {
+.nosotros .testimonios blockquote footer {
   margin-top: 5px;
   color: #888;
 }
 
-main .titulo-galeria {
-  display: flex;
-  justify-content: center;
-  margin-top: 3.125rem;
-  font-size: 60px;
-}
-main .sector-galeria {
+.sector-galeria {
   margin: 60px;
 }
-main .sector-galeria .container-galeria {
+.sector-galeria .container-galeria {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   width: 100%;
   margin: auto;
 }
-main .sector-galeria .container-galeria .gym-columna {
+.sector-galeria .container-galeria .gym-columna {
   margin: 10px;
 }
-main .sector-galeria .container-galeria .gym-columna img {
+.sector-galeria .container-galeria .gym-columna img {
   width: 100%;
   height: 100%;
 }
 
-main .banner-start {
+.banner-start {
   width: 100%;
   background-image: url(../assets/img/banner-1.jpeg);
   background-size: cover;
@@ -331,19 +335,20 @@ main .banner-start {
   padding: 20px 0;
   margin-top: 1.875rem;
 }
-main .banner-start h2 {
+.banner-start h2 {
   font-size: 2.25rem;
   margin-bottom: 0.625rem;
   margin-top: 0.9375rem;
 }
-main .banner-start p {
+.banner-start p {
   font-size: 1.75rem;
 }
-main .sector-plan {
+
+.sector-plan {
   display: flex;
   justify-content: center;
 }
-main .sector-plan .container-planes {
+.sector-plan .container-planes {
   width: 80%;
   margin: 60px auto;
   padding: 20px;
@@ -351,40 +356,41 @@ main .sector-plan .container-planes {
   border-radius: 10px;
   box-shadow: 0 0 10px rgb(83, 81, 81);
 }
-main .sector-plan .container-planes .titulo-plan {
+.sector-plan .container-planes .titulo-plan {
   display: flex;
   justify-content: center;
   margin: 20px;
   padding: 25px;
 }
-main .sector-plan .container-planes .plan:nth-child(2) {
+.sector-plan .container-planes .plan:nth-child(2) {
   background-color: #423F3E;
 }
-main .sector-plan .container-planes .plan:nth-child(3) {
+.sector-plan .container-planes .plan:nth-child(3) {
   background-color: #171010;
 }
-main .sector-plan .container-planes .plan:nth-child(4) {
+.sector-plan .container-planes .plan:nth-child(4) {
   background-color: #362222;
 }
-main .sector-plan .container-planes .plan {
+.sector-plan .container-planes .plan {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 35px;
   margin: 40px;
   margin-bottom: 80px;
 }
-main .sector-plan .container-planes .plan h2 {
+.sector-plan .container-planes .plan h2 {
   padding-bottom: 10px;
   color: white;
 }
-main .sector-plan .container-planes .plan ul {
+.sector-plan .container-planes .plan ul {
   list-style: none;
   padding: 0;
 }
-main .sector-plan .container-planes .plan ul li {
+.sector-plan .container-planes .plan ul li {
   margin-bottom: 10px;
 }
-main .banner-end {
+
+.banner-end {
   width: 100%;
   background-image: url("../assets/img/banner-2.jpeg");
   background-size: cover;
@@ -394,20 +400,20 @@ main .banner-end {
   padding: 20px 0;
   margin-bottom: 1.875rem;
 }
-main .banner-end h2 {
+.banner-end h2 {
   font-size: 2.25rem;
   margin-bottom: 0.625rem;
   margin-top: 0.9375rem;
 }
-main .banner-end p {
+.banner-end p {
   font-size: 1.75rem;
 }
 
 @media screen and (max-width: 1440px) {
-  main .seccion section article {
+  .seccion section article {
     text-align: center;
   }
-  main .seccion section article p {
+  .seccion section article p {
     font-size: 0.875rem;
   }
 }
@@ -422,10 +428,20 @@ main .banner-end p {
     grid-template-columns: 1fr;
     justify-items: center;
   }
+  .sector-galeria .container-galeria {
+    grid-template-columns: repeat(2, 50%);
+  }
 }
 @media screen and (max-width: 768px) {
   .seccion section {
     flex-direction: column;
+  }
+  .sectores section img {
+    max-width: 100%;
+    height: auto;
+  }
+  .sectores section p {
+    font-size: 1rem;
   }
   .sector-galeria .container-galeria {
     grid-template-columns: repeat(2, 50%);
@@ -444,68 +460,94 @@ main .banner-end p {
   }
 }
 @media screen and (max-width: 425px) {
-  main h1 {
+  h1 {
     font-size: 1.5rem;
   }
-  main .parrafo-principal {
+  .parrafo-principal {
     font-size: 1.125rem;
   }
-  main .banner-index h2 {
+  .banner-index h2 {
     font-size: 1.125rem;
   }
-  main .banner-index p {
+  .banner-index p {
     font-size: 0.875rem;
   }
-  main .banner-index a {
+  .banner-index a {
     font-size: 0.875rem;
   }
-  main .item-index {
+  .item-index {
     display: flex;
     flex-direction: column;
     gap: 3.125rem;
   }
-  main .item-index .item-seccion h3 {
+  .item-index .item-seccion h3 {
     font-size: 1rem;
   }
-  main .item-index .item-seccion ul li {
+  .item-index .item-seccion ul li {
     font-size: 12px;
   }
-  main .seccion section {
+  .seccion section {
     flex-direction: column;
   }
-  main .seccion section article {
+  .seccion section article {
     text-align: center;
     padding: 0.9375rem;
   }
-  main .seccion section article h3 {
+  .seccion section article h3 {
     font-size: 1.125rem;
   }
-  main .seccion section article p {
+  .seccion section article p {
     font-size: 0.875rem;
     text-align: center;
   }
-  main .seccion section article a {
+  .seccion section article a {
     font-size: 0.875rem;
   }
-  main .banner-start h2 {
-    font-size: 1.375rem;
-  }
-  main .banner-start p {
-    font-size: 1.125rem;
-  }
-  main .sector-plan .container-planes .titulo-plan {
-    font-size: 1.625rem;
-  }
-  main .sector-plan .container-planes h2 {
+  .titulo-sector {
     font-size: 1.25rem;
   }
-  main .sector-plan .container-planes ul li {
-    font-size: 1rem;
+  .parrafo-sector {
+    font-size: 0.875rem;
   }
-  main .banner-end h2 {
+  .sectores section h2 {
+    font-size: 1.125rem;
+  }
+  .sectores section p {
+    font-size: 0.75rem;
+  }
+  .nosotros h1 {
+    font-size: 1.625rem;
+  }
+  .nosotros h2 {
+    font-size: 1.5rem;
+  }
+  .nosotros p {
+    font-size: 0.875rem;
+  }
+  .nosotros .equipo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-start h2 {
     font-size: 1.375rem;
   }
-  main .banner-end p {
+  .banner-start p {
+    font-size: 1.125rem;
+  }
+  .sector-plan .container-planes .titulo-plan {
+    font-size: 1.375rem;
+  }
+  .sector-plan .container-planes h2 {
+    font-size: 1.125rem;
+  }
+  .sector-plan .container-planes ul li {
+    font-size: 0.875rem;
+  }
+  .banner-end h2 {
+    font-size: 1.375rem;
+  }
+  .banner-end p {
     font-size: 1.125rem;
   }
 }
@@ -547,6 +589,9 @@ footer .footer-row .seccion-footer .quick-links li a {
   .seccion section article a {
     font-size: 0.75rem;
   }
+  .sector-galeria .container-galeria {
+    grid-template-columns: repeat(1, 100%);
+  }
   .banner-start h2 {
     font-size: 1.125rem;
   }
@@ -554,13 +599,13 @@ footer .footer-row .seccion-footer .quick-links li a {
     font-size: 1rem;
   }
   .sector-plan .container-planes .titulo-plan {
-    font-size: 1.375rem;
+    font-size: 1.125rem;
   }
   .sector-plan .container-planes h2 {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
   .sector-plan .container-planes ul li {
-    font-size: 0.75rem;
+    font-size: 0.625rem;
   }
   .banner-end h2 {
     font-size: 1.125rem;
@@ -607,6 +652,27 @@ footer .footer-row .seccion-footer {
   .seccion section article a {
     font-size: 0.5rem;
   }
+  .titulo-sector {
+    font-size: 1rem;
+  }
+  .parrafo-sector {
+    font-size: 0.625rem;
+  }
+  .sectores section h2 {
+    font-size: 0.875rem;
+  }
+  .sectores section p {
+    font-size: 0.625rem;
+  }
+  .nosotros h1 {
+    font-size: 1.125rem;
+  }
+  .nosotros h2 {
+    font-size: 1rem;
+  }
+  .nosotros p {
+    font-size: 0.75rem;
+  }
   .sector-galeria .container-galeria {
     grid-template-columns: repeat(1, 100%);
   }
@@ -616,8 +682,16 @@ footer .footer-row .seccion-footer {
   .banner-start p {
     font-size: 0.75rem;
   }
+  .sector-plan .container-planes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .sector-plan .container-planes .titulo-plan {
-    font-size: 1.125rem;
+    font-size: 0.75rem;
+  }
+  .sector-plan .container-planes .plan {
+    width: 80%;
   }
   .sector-plan .banner-end h2 {
     font-size: 1rem;

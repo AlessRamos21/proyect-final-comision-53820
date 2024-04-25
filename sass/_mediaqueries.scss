@@ -1,5 +1,4 @@
 @media screen and (max-width: 1440px){
-    main{
         .seccion{
             section{
                 article{
@@ -11,7 +10,6 @@
             }
         }
     }
-}
 @media screen and (max-width: 1024px){
     .seccion{
         section{
@@ -25,11 +23,27 @@
         grid-template-columns: 1fr;
         justify-items: center;
     }
+    .sector-galeria{
+        .container-galeria{
+            grid-template-columns: repeat(2,50%);
+        }
+    }
 }
 @media screen and (max-width: 768px){
     .seccion{
         section{
             flex-direction: column;
+        }
+    }
+    .sectores{
+        section{
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+            p{
+                font-size: 1rem;
+            }
         }
     }
     .sector-galeria{
@@ -56,7 +70,6 @@
 }
 
 @media screen and (max-width: 425px){
-    main{
         h1{
             font-size: 1.5rem;
         }
@@ -108,6 +121,38 @@
                 }
             }
         }
+        .titulo-sector{
+            font-size: 1.25rem;
+        }
+        .parrafo-sector{
+            font-size: .875rem;
+        }
+        .sectores{
+            section{
+                h2{
+                    font-size: 1.125rem;
+                }
+                p{
+                    font-size: .75rem;
+                }
+            }
+        }
+        .nosotros{
+            h1{
+                font-size: 1.625rem;
+            }
+            h2{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: .875rem;
+            }
+            .equipo{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
         .banner-start{
             h2{
                 font-size: 1.375rem;
@@ -119,14 +164,14 @@
         .sector-plan{
             .container-planes{
                 .titulo-plan{
-                    font-size: 1.625rem;
+                    font-size: 1.375rem;
                 }
                 h2{
-                    font-size: 1.25rem;
+                    font-size: 1.125rem;
                 }
                 ul{
                     li{
-                        font-size: 1rem;
+                        font-size: .875rem;
                     }
                 }
             }
@@ -139,7 +184,6 @@
                 font-size: 1.125rem;
             }
         }   
-    }
     }
     footer{
         .footer-row{
@@ -188,6 +232,11 @@
                 }
             }
         }
+        .sector-galeria{
+            .container-galeria{
+                grid-template-columns: repeat(1,100%);
+            }
+        }
         .banner-start{
             h2{
                 font-size: 1.125rem;
@@ -199,14 +248,14 @@
         .sector-plan{
             .container-planes{
                 .titulo-plan{
-                    font-size: 1.375rem;
+                    font-size: 1.125rem;
                 }
                 h2{
-                    font-size: 1rem;
+                    font-size: .875rem;
                 }
                 ul{
                     li{
-                        font-size: .75rem;
+                        font-size: .625rem;
                     }
                 }
             }
@@ -269,6 +318,33 @@
                 }
             }
         }
+        .titulo-sector{
+            font-size: 1rem;
+        }
+        .parrafo-sector{
+            font-size: .625rem;
+        }
+        .sectores{
+            section{
+                h2{
+                    font-size: .875rem;
+                }
+                p{
+                    font-size: .625rem;
+                }
+            }
+        }
+        .nosotros{
+            h1{
+                font-size: 1.125rem;
+            }
+            h2{
+                font-size: 1rem;
+            }
+            p{
+                font-size: .75rem;
+            }
+        }
         .sector-galeria{
             .container-galeria{
                 grid-template-columns: repeat(1,100%);
@@ -284,10 +360,16 @@
         }
         .sector-plan{
             .container-planes{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 .titulo-plan{
-                    font-size: 1.125rem;
+                    font-size: .75rem;
+                }
+                .plan{
+                    width: 80%;
+                }
             }
-        }
         .banner-end{
             h2{
                 font-size: 1rem;

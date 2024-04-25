@@ -1,4 +1,3 @@
-main{
     .nosotros {
         max-width: 800px;
         margin: 1.5625rem auto;
@@ -21,15 +20,17 @@ main{
         }
         .equipo {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
             margin-top: 3.125rem;
             .miembro-equipo {
                 text-align: center;
-                max-width: 150px;
+                max-width: 18.75rem;
+                margin: .625rem;
                 img {
                     border-radius: 50%;
                     width: 100%;
                     height: auto;
+                    padding: .625rem;
                 }
                 h3 {
                     color: white;
@@ -54,4 +55,3 @@ main{
             }
         }
     }
-}
