@@ -1,4 +1,3 @@
-// INDEX
 @media screen and (max-width: 1440px){
     main{
         .seccion{
@@ -14,26 +13,48 @@
     }
 }
 @media screen and (max-width: 1024px){
-    main{
-        .seccion{
-            section{
-                flex-direction: column;
-                article{
-                    text-align: center;
+    .seccion{
+        section{
+            flex-direction: column;
+            article{
+                text-align: center;
             }
         }
     }
-}
+    .sectores{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
 }
 @media screen and (max-width: 768px){
-    main{
-        .seccion{
-            section{
-                flex-direction: column;
-            }
+    .seccion{
+        section{
+            flex-direction: column;
         }
+    }
+    .sector-galeria{
+        .container-galeria{
+            grid-template-columns: repeat(2,50%);
+        }
+    }
+    .banner-start{
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    .banner-end{
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
 }
-}
+
 @media screen and (max-width: 425px){
     main{
         h1{
@@ -87,6 +108,38 @@
                 }
             }
         }
+        .banner-start{
+            h2{
+                font-size: 1.375rem;
+            }
+            p{
+                font-size: 1.125rem;
+            }
+        }
+        .sector-plan{
+            .container-planes{
+                .titulo-plan{
+                    font-size: 1.625rem;
+                }
+                h2{
+                    font-size: 1.25rem;
+                }
+                ul{
+                    li{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        .banner-end{
+            h2{
+                font-size: 1.375rem;
+            }
+            p{
+                font-size: 1.125rem;
+            }
+        }   
+    }
     }
     footer{
         .footer-row{
@@ -109,9 +162,7 @@
             }
         }
     }
-}
 @media screen and (max-width: 375px){
-    main{
         h1{
             font-size: 1.25rem;
         }
@@ -137,6 +188,37 @@
                 }
             }
         }
+        .banner-start{
+            h2{
+                font-size: 1.125rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+        .sector-plan{
+            .container-planes{
+                .titulo-plan{
+                    font-size: 1.375rem;
+                }
+                h2{
+                    font-size: 1rem;
+                }
+                ul{
+                    li{
+                        font-size: .75rem;
+                    }
+                }
+            }
+        }
+        .banner-end{
+            h2{
+                font-size: 1.125rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        } 
     }
     footer{
         .footer-row{
@@ -146,9 +228,7 @@
             }
         }
     }
-}
 @media screen and (max-width: 320px){
-    main{
         h1{
             font-size: 1rem;
         }
@@ -189,154 +269,11 @@
                 }
             }
         }
-    }
-    footer{
-        .footer-row{
-            .seccion-footer{
-                margin: .375rem;
-                padding: .625rem
-                h4{
-                    font-size: .75rem;
-                }
-                p{
-                    font-size: .5rem;
-                }
-                .quick-links{
-                    li{
-                        a{
-                            font-size: .5rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-// SECCIONES
-@media screen and (max-width: 1024){
-    main{
-        .sectores{
-            justify-items: center;
-            grid-template-columns: 1fr;
-        }
-    }
-}
-// GALERIA
-@media screen and (max-width: 768px){
-    main{
-        .sector-galeria{
-            .container-galeria{
-                grid-template-columns: repeat(2,50%);
-            }
-        }
-    }
-}
-@media screen and (max-width: 320px){
-    main{
         .sector-galeria{
             .container-galeria{
                 grid-template-columns: repeat(1,100%);
             }
         }
-    }
-}
-// NOSOTROS
-@media screen and (max-width: 425px){
-
-}
-// PLANES
-@media screen and (max-width: 768px){
-    main{
-        .banner-start{
-            h2{
-                font-size: 2rem;
-            }
-            p{
-                font-size: 1.5rem;
-            }
-        }
-        .banner-end{
-            h2{
-                font-size: 2rem;
-            }
-            p{
-                font-size: 1.5rem;
-            }
-        }
-    }
-}
-@media screen and (max-width: 425px){
-    main{
-        .banner-start{
-            h2{
-                font-size: 1.375rem;
-            }
-            p{
-                font-size: 1.125rem;
-            }
-        }
-        .sector-plan{
-            .container-planes{
-                .titulo-plan{
-                    font-size: 1.625rem;
-                }
-                h2{
-                    font-size: 1.25rem;
-                }
-                ul{
-                    li{
-                        font-size: 1rem;
-                    }
-                }
-            }
-        }
-        .banner-end{
-            h2{
-                font-size: 1.375rem;
-            }
-            p{
-                font-size: 1.125rem;
-            }
-        }   
-    }
-}
-@media screen and (max-width: 375px){
-    main{
-        .banner-start{
-            h2{
-                font-size: 1.125rem;
-            }
-            p{
-                font-size: 1rem;
-            }
-        }
-        .sector-plan{
-            .container-planes{
-                .titulo-plan{
-                    font-size: 1.375rem;
-                }
-                h2{
-                    font-size: 1rem;
-                }
-                ul{
-                    li{
-                        font-size: .75rem;
-                    }
-                }
-            }
-        }
-        .banner-end{
-            h2{
-                font-size: 1.125rem;
-            }
-            p{
-                font-size: 1rem;
-            }
-        }   
-    }
-}
-@media screen and (max-width: 320px){
-    main{
         .banner-start{
             h2{
                 font-size: 1rem;
@@ -360,5 +297,25 @@
             }
         }   
     }
-}
+    footer{
+        .footer-row{
+            .seccion-footer{
+                margin: .375rem;
+                padding: .625rem
+                h4{
+                    font-size: .75rem;
+                }
+                p{
+                    font-size: .5rem;
+                }
+                .quick-links{
+                    li{
+                        a{
+                            font-size: .5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
