@@ -36,10 +36,36 @@
 }
 @media screen and (max-width: 425px){
     main{
-        section{
-            .carousel{
-                margin: .625rem;
-                padding: .625rem;
+        h1{
+            font-size: 1.5rem;
+        }
+        .parrafo-principal{
+            font-size: 1.125rem;
+        }
+        .banner-index{
+            h2{
+                font-size: 1.125rem
+            }
+            p{
+                font-size: .875rem;
+            }
+            a{
+                font-size: .875rem;
+            }
+        }
+        .item-index{
+            display: flex;
+            flex-direction: column;
+            gap: 3.125rem;
+            .item-seccion{
+                h3{
+                    font-size: 1rem;
+                }
+                ul{
+                    li{
+                        font-size: 12px;
+                    }
+                }
             }
         }
         .seccion{
@@ -86,6 +112,12 @@
 }
 @media screen and (max-width: 375px){
     main{
+        h1{
+            font-size: 1.25rem;
+        }
+        .parrafo-principal{
+            font-size: .875rem;
+        }
         .seccion{
             section{
                 flex-direction: column;
@@ -117,9 +149,26 @@
 }
 @media screen and (max-width: 320px){
     main{
+        h1{
+            font-size: 1rem;
+        }
+        .parrafo-principal{
+            font-size: .75rem;
+        }
         section{
             .carousel{
                 margin: .9375rem;
+            }
+        }
+        .banner-index{
+            h2{
+                font-size: .75rem
+            }
+            p{
+                font-size: .5rem;
+            }
+            a{
+                font-size: .5rem;
             }
         }
         .seccion{
@@ -160,6 +209,14 @@
                     }
                 }
             }
+        }
+    }
+}
+// SECCIONES
+@media screen and (max-width: 1024){
+    main{
+        .sectores{
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 }

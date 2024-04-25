@@ -1,0 +1,513 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+header {
+  background-color: #1a1a1a;
+}
+header .navbar {
+  width: 100%;
+}
+header .navbar-collapse {
+  justify-content: end;
+}
+header .navbar-nav {
+  margin-right: 6%;
+}
+header .nav-link {
+  color: white;
+  font-size: 1.3rem;
+}
+
+body {
+  background-color: #434343;
+  color: white;
+  font-family: "Inter", sans-serif;
+  text-transform: capitalize;
+}
+
+.footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 30px 0;
+}
+.footer .container-footer .footer-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer .container-footer .footer-row .seccion-footer h4 {
+  color: white;
+  margin-bottom: 15px;
+}
+.footer .container-footer .footer-row .seccion-footer p {
+  margin-bottom: 10px;
+}
+.footer .container-footer .footer-row .quick-links {
+  list-style: none;
+  padding: 0;
+}
+.footer .container-footer .footer-row .quick-links li {
+  margin-bottom: 8px;
+}
+.footer .container-footer .footer-row .quick-links li a {
+  color: white;
+}
+.footer .container-footer .footer-row .quick-links li a i {
+  color: white;
+}
+
+main section .carousel {
+  margin: 60px;
+}
+main .banner {
+  background-image: url("../banner-1.jpeg"); /* Cambia la ruta de la imagen de fondo */
+  background-size: cover; /* La imagen cubre todo el banner */
+  background-position: center; /* La imagen se centra en el banner */
+  padding: 80px 20px; /* Espacio interno del banner */
+  color: white; /* Color de texto blanco para contraste */
+  text-align: center; /* Centra el contenido del banner */
+}
+main .banner .banner-content {
+  max-width: 800px; /* Ancho máximo para centrar el contenido */
+  margin: 0 auto;
+}
+main .banner .banner-content .cta-button {
+  display: inline-block;
+  background-color: #ff6b6b; /* Color del botón */
+  color: white; /* Color del texto del botón */
+  padding: 10px 20px; /* Espacio interno del botón */
+  border-radius: 5px; /* Bordes redondeados */
+  text-decoration: none; /* Quitar subrayado */
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s; /* Animación al pasar el cursor */
+}
+main .banner .banner-content .cta-button .cta-button:hover {
+  background-color: #ff4040; /* Cambia el color al pasar el cursor */
+}
+main .seccion {
+  display: flex;
+  justify-content: center;
+}
+main .seccion section {
+  display: flex;
+}
+main .seccion section article {
+  margin: 30px;
+  background-color: rgba(0, 0, 0, 0.34);
+  padding: 3.125rem;
+  text-align: center;
+}
+main .seccion section article h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.875rem;
+  margin: 1.5625rem;
+}
+main .seccion section article p {
+  display: flex;
+  justify-content: center;
+}
+main .seccion section article a {
+  display: flex;
+  justify-content: center;
+  display: block;
+  background-color: rgb(149, 165, 166);
+  padding: 0.9375rem 1.875rem;
+  margin: 0.625rem;
+  color: white;
+  text-decoration: none;
+}
+
+main .sectores section {
+  padding: 40px;
+  margin: 20px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+main .sectores section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+main .sectores section img h2 {
+  margin-top: 0;
+  color: #333;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+main .sectores section img h2 p {
+  color: #555;
+}
+
+main .titulo-comunidad {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 30px;
+  font-size: large;
+  font-size: 60px;
+}
+main section .container-comunidad {
+  width: 70%;
+  margin: auto;
+}
+main section .container-comunidad .articulo-comunidad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  border-bottom: white 2px dashed;
+}
+main section .container-comunidad .articulo-comunidad img {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+}
+main section .container-comunidad .articulo-comunidad .parrafo-1, main section .container-comunidad .articulo-comunidad .parrafo-3, main section .container-comunidad .articulo-comunidad .parrafo-2 {
+  margin: 25px;
+  padding: 50px;
+  font-size: large;
+  background-color: rgb(44, 54, 57);
+}
+main section .container-comunidad .articulo-comunidad .parrafo-2 {
+  background-color: rgb(63, 78, 79);
+}
+main section .container-comunidad .articulo-comunidad .parrafo-3 {
+  background-color: rgb(44, 54, 57);
+}
+
+main .titulo-galeria {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.125rem;
+  font-size: 60px;
+}
+main .sector-galeria {
+  margin: 60px;
+}
+main .sector-galeria .container-galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  width: 100%;
+  margin: auto;
+}
+main .sector-galeria .container-galeria .gym-columna {
+  margin: 10px;
+}
+main .sector-galeria .container-galeria .gym-columna img {
+  width: 100%;
+  height: 100%;
+}
+
+main .banner-start {
+  width: 100%;
+  background-image: url(../assets/img/banner-1.jpeg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 1.875rem;
+}
+main .banner-start h2 {
+  font-size: 2.25rem;
+  margin-bottom: 0.625rem;
+  margin-top: 0.9375rem;
+}
+main .banner-start p {
+  font-size: 1.75rem;
+}
+main section .container-planes {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.34);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+main section .container-planes .titulo-plan {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 25px;
+}
+main section .container-planes .plan-basico {
+  background-color: #423F3E;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 35px;
+  margin: 40px;
+  margin-bottom: 80px;
+}
+main section .container-planes .plan-basico h2 {
+  padding-bottom: 10px;
+  color: white;
+}
+main section .container-planes .plan-basico ul {
+  list-style: none;
+  padding: 0;
+}
+main section .container-planes .plan-basico ul li {
+  margin-bottom: 10px;
+}
+main section .container-planes .plan-premium {
+  background-color: #171010;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 35px;
+  margin: 40px;
+  margin-bottom: 80px;
+}
+main section .container-planes .plan-premium h2 {
+  padding-bottom: 10px;
+  color: white;
+}
+main section .container-planes .plan-premium ul {
+  list-style: none;
+  padding: 0;
+}
+main section .container-planes .plan-premium ul li {
+  margin-bottom: 10px;
+}
+main section .container-planes .plan-anual {
+  background-color: #362222;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 35px;
+  margin: 40px;
+  margin-bottom: 80px;
+}
+main section .container-planes .plan-anual h2 {
+  padding-bottom: 10px;
+  color: white;
+}
+main section .container-planes .plan-anual ul {
+  list-style: none;
+  padding: 0;
+}
+main section .container-planes .plan-anual ul li {
+  margin-bottom: 10px;
+}
+main .banner-end {
+  width: 100%;
+  background-image: url("../assets/img/banner-2.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 1.875rem;
+}
+main .banner-end h2 {
+  font-size: 2.25rem;
+  margin-bottom: 0.625rem;
+  margin-top: 0.9375rem;
+}
+main .banner-end p {
+  font-size: 1.75rem;
+}
+
+@media screen and (max-width: 1440px) {
+  main .seccion section article {
+    text-align: center;
+  }
+  main .seccion section article p {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main .seccion section {
+    flex-direction: column;
+  }
+  main .seccion section article {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .seccion section {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 425px) {
+  main section .carousel {
+    margin: 0.625rem;
+    padding: 0.625rem;
+  }
+  main .seccion section {
+    flex-direction: column;
+  }
+  main .seccion section article {
+    text-align: center;
+    padding: 0.9375rem;
+  }
+  main .seccion section article h3 {
+    font-size: 1.125rem;
+  }
+  main .seccion section article p {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  main .seccion section article a {
+    font-size: 0.875rem;
+  }
+  footer .footer-row .seccion-footer {
+    margin: 0.25rem;
+    padding: 0.625rem;
+  }
+  footer .footer-row .seccion-footer h4 {
+    font-size: 1rem;
+  }
+  footer .footer-row .seccion-footer p {
+    font-size: 0.75rem;
+  }
+  footer .footer-row .seccion-footer .quick-links li a {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  main .seccion section {
+    flex-direction: column;
+  }
+  main .seccion section article {
+    text-align: center;
+    padding: 0.9375rem;
+  }
+  main .seccion section article h3 {
+    font-size: 1rem;
+  }
+  main .seccion section article p {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  main .seccion section article a {
+    font-size: 0.75rem;
+  }
+  footer .footer-row .seccion-footer {
+    margin: 0.375rem;
+    padding: 0.625rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  main section .carousel {
+    margin: 0.9375rem;
+  }
+  main .seccion section article {
+    padding: 0.9375rem;
+    margin: 0.3125rem;
+  }
+  main .seccion section article h3 {
+    font-size: 0.75rem;
+  }
+  main .seccion section article p {
+    font-size: 0.5rem;
+    text-align: center;
+  }
+  main .seccion section article a {
+    font-size: 0.5rem;
+  }
+  footer .footer-row .seccion-footer {
+    margin: 0.375rem;
+    padding: 0.625rem h4;
+    padding-font-size: 0.75rem;
+  }
+  footer .footer-row .seccion-footer p {
+    font-size: 0.5rem;
+  }
+  footer .footer-row .seccion-footer .quick-links li a {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .sector-galeria .container-galeria {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+@media screen and (max-width: 320px) {
+  main .sector-galeria .container-galeria {
+    grid-template-columns: repeat(1, 100%);
+  }
+}
+@media screen and (max-width: 768px) {
+  main .banner-start h2 {
+    font-size: 2rem;
+  }
+  main .banner-start p {
+    font-size: 1.5rem;
+  }
+  main .banner-end h2 {
+    font-size: 2rem;
+  }
+  main .banner-end p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .banner-start h2 {
+    font-size: 1.375rem;
+  }
+  main .banner-start p {
+    font-size: 1.125rem;
+  }
+  main .sector-plan .container-planes .titulo-plan {
+    font-size: 1.625rem;
+  }
+  main .sector-plan .container-planes h2 {
+    font-size: 1.25rem;
+  }
+  main .sector-plan .container-planes ul li {
+    font-size: 1rem;
+  }
+  main .banner-end h2 {
+    font-size: 1.375rem;
+  }
+  main .banner-end p {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  main .banner-start h2 {
+    font-size: 1.125rem;
+  }
+  main .banner-start p {
+    font-size: 1rem;
+  }
+  main .sector-plan .container-planes .titulo-plan {
+    font-size: 1.375rem;
+  }
+  main .sector-plan .container-planes h2 {
+    font-size: 1rem;
+  }
+  main .sector-plan .container-planes ul li {
+    font-size: 0.75rem;
+  }
+  main .banner-end h2 {
+    font-size: 1.125rem;
+  }
+  main .banner-end p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  main .banner-start h2 {
+    font-size: 1rem;
+  }
+  main .banner-start p {
+    font-size: 0.75rem;
+  }
+  main .sector-plan .container-planes .titulo-plan {
+    font-size: 1.125rem;
+  }
+  main .sector-plan .banner-end h2 {
+    font-size: 1rem;
+  }
+  main .sector-plan .banner-end p {
+    font-size: 0.75rem;
+  }
+}/*# sourceMappingURL=style.css.map */

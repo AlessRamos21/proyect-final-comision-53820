@@ -1,11 +1,3 @@
-@mixin planes ($fondo){
-    background-color: $fondo;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 35px;
-    margin: 40px;
-    margin-bottom: 80px;
-}
 main{
     .banner-start{
         width: 100%;
@@ -25,50 +17,37 @@ main{
             font-size: 1.75rem;
         }
     }
-    section{
+    .sector-plan{
+        display: flex;
+        justify-content: center;
         .container-planes{
-            max-width: 1200px;
+            width: 80%;
             margin: 60px auto;
             padding: 20px;
             background-color: $fondo-articulo;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgb(83, 81, 81);
             .titulo-plan{
                 display: flex;
             justify-content: center;
             margin: 20px;
             padding: 25px;
             }
-            .plan-basico{
-                @include planes (#423F3E);
-                h2{
-                    padding-bottom: 10px;
-                    color: $letra-color;
-                }
-                ul{
-                    list-style: none;
-                    padding: 0;
-                    li{
-                        margin-bottom: 10px;
-                    }
-                }
+            .plan:nth-child(2){
+                background-color: #423F3E;
             }
-            .plan-premium{
-                @include planes (#171010);
-                h2{
-                    padding-bottom: 10px;
-                    color: $letra-color;
-                }
-                ul{
-                    list-style: none;
-                    padding: 0;
-                    li{
-                        margin-bottom: 10px;
-                    }
-                }
+            .plan:nth-child(3){
+                background-color: #171010;
             }
-            .plan-anual{
-                @include planes (#362222);
+            .plan:nth-child(4){
+                background-color: #362222;
+            }
+            .plan{
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 35px;
+                margin: 40px;
+                margin-bottom: 80px;
                 h2{
                     padding-bottom: 10px;
                     color: $letra-color;

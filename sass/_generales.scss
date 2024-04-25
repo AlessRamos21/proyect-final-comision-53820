@@ -9,15 +9,23 @@ header{
     background-color: #1a1a1a;
     .navbar{
         width: 100%;
-        }.navbar-collapse{
+        .container-fluid{
+            img{
+                width: 12.5rem;
+            }
+        }
+        .navbar-collapse{
             justify-content: end;
-            }.navbar-nav{
+            .navbar-nav{
                 margin-right: 6%;
-                }.nav-link{
+                .nav-link{
                     color: $letra-color;
                     font-size: 1.3rem;
                 }
-                }
+            }
+        }
+    }
+}
 // BODY
 body{
     background-color: $fondo-color1;
@@ -50,6 +58,9 @@ body{
                     margin-bottom: 8px;
                     a{
                         color: $letra-color;
+                        i{
+                            color: white;
+                        }
                     }
                 }
             }

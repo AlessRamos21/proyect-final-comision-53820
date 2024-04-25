@@ -11,13 +11,16 @@ header {
 header .navbar {
   width: 100%;
 }
-header .navbar-collapse {
+header .navbar .container-fluid img {
+  width: 12.5rem;
+}
+header .navbar .navbar-collapse {
   justify-content: end;
 }
-header .navbar-nav {
+header .navbar .navbar-collapse .navbar-nav {
   margin-right: 6%;
 }
-header .nav-link {
+header .navbar .navbar-collapse .navbar-nav .nav-link {
   color: white;
   font-size: 1.3rem;
 }
@@ -55,9 +58,101 @@ body {
 .footer .container-footer .footer-row .quick-links li a {
   color: white;
 }
+.footer .container-footer .footer-row .quick-links li a i {
+  color: white;
+}
 
-main section .carousel {
-  margin: 60px;
+main section .carousel .container-fluid {
+  height: 85vh;
+}
+main h1 {
+  font-size: 36px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  padding: 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+main .parrafo-principal {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+  padding: 0 20px;
+}
+main .item-index {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 7.5rem;
+  padding: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+main .item-index .item-seccion {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #1a1a1a;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+main .item-index .item-seccion:hover {
+  transform: translateY(-5px);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.15);
+}
+main .item-index .item-seccion h3 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+main .item-index .item-seccion ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 1.6;
+}
+main .item-index .item-seccion ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+main .item-index .item-seccion ul li strong {
+  color: #E6E6FA;
+}
+main .banner-index {
+  width: 100%;
+  background-image: url(../assets/img/banner-1.jpeg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 1.875rem;
+}
+main .banner-index .cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #333;
+  color: #f0f0f0;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+main .banner-index .cta-button:hover {
+  background-color: #555;
+  transform: translateY(-2px);
+}
+main .banner-index h2 {
+  font-size: 2.25rem;
+  margin-bottom: 0.625rem;
+  margin-top: 0.9375rem;
+}
+main .banner-index p {
+  font-size: 1.75rem;
 }
 main .seccion {
   display: flex;
@@ -93,59 +188,113 @@ main .seccion section article a {
   text-decoration: none;
 }
 
-main .sector-container .sector-item {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 1.875rem;
+main .titulo-sector {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  margin: 20px;
+  text-align: left;
+  border-bottom: 2px solid #e0e0e0;
+  padding: 10px;
 }
-main .sector-container .sector-item .item-logo {
-  background-color: rgba(0, 0, 0, 0.34);
-  padding: 3.75rem;
-  width: 25rem;
-  height: 25rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+main .parrafo-sector {
+  font-size: 16px;
+  color: white;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: 3.125rem;
+  padding: 0.625rem;
+  text-align: left;
+}
+main .sectores {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+main .sectores section {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+main .sectores section:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+}
+main .sectores section h2 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+main .sectores section img {
+  width: 100%;
+  height: 31.25rem;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+main .sectores section p {
+  font-size: 14px;
+  color: white;
+  line-height: 1.4;
+  margin: 0;
 }
 
-main .titulo-comunidad {
+main .nosotros {
+  max-width: 800px;
+  margin: 1.5625rem auto;
+  padding: 20px;
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(83, 81, 81);
+}
+main .nosotros h1 {
+  margin-top: 0;
+  color: white;
+}
+main .nosotros h2 {
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+main .nosotros p {
+  color: white;
+  line-height: 1.5;
+}
+main .nosotros .equipo {
   display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  padding: 30px;
-  font-size: large;
-  font-size: 60px;
+  justify-content: space-around;
+  margin-top: 3.125rem;
 }
-main section .container-comunidad {
-  width: 70%;
-  margin: auto;
+main .nosotros .equipo .miembro-equipo {
+  text-align: center;
+  max-width: 150px;
 }
-main section .container-comunidad .articulo-comunidad {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px;
-  border-bottom: white 2px dashed;
+main .nosotros .equipo .miembro-equipo img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
 }
-main section .container-comunidad .articulo-comunidad img {
-  width: 200px;
-  height: 200px;
-  margin: 50px;
+main .nosotros .equipo .miembro-equipo h3 {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
-main section .container-comunidad .articulo-comunidad .parrafo-1, main section .container-comunidad .articulo-comunidad .parrafo-3, main section .container-comunidad .articulo-comunidad .parrafo-2 {
-  margin: 25px;
-  padding: 50px;
-  font-size: large;
-  background-color: rgb(44, 54, 57);
+main .nosotros .equipo .miembro-equipo p {
+  color: white;
 }
-main section .container-comunidad .articulo-comunidad .parrafo-2 {
-  background-color: rgb(63, 78, 79);
+main .nosotros .testimonios blockquote {
+  margin: 20px 0;
+  padding: 10px 20px;
+  border-left: 5px solid #ff6b6b;
+  background-color: #171010;
 }
-main section .container-comunidad .articulo-comunidad .parrafo-3 {
-  background-color: rgb(44, 54, 57);
+main .nosotros .testimonios blockquote footer {
+  margin-top: 5px;
+  color: #888;
 }
 
 main .titulo-galeria {
@@ -189,75 +338,49 @@ main .banner-start h2 {
 main .banner-start p {
   font-size: 1.75rem;
 }
-main section .container-planes {
-  max-width: 1200px;
+main .sector-plan {
+  display: flex;
+  justify-content: center;
+}
+main .sector-plan .container-planes {
+  width: 80%;
   margin: 60px auto;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.34);
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgb(83, 81, 81);
 }
-main section .container-planes .titulo-plan {
+main .sector-plan .container-planes .titulo-plan {
   display: flex;
   justify-content: center;
   margin: 20px;
   padding: 25px;
 }
-main section .container-planes .plan-basico {
+main .sector-plan .container-planes .plan:nth-child(2) {
   background-color: #423F3E;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 35px;
-  margin: 40px;
-  margin-bottom: 80px;
 }
-main section .container-planes .plan-basico h2 {
-  padding-bottom: 10px;
-  color: white;
-}
-main section .container-planes .plan-basico ul {
-  list-style: none;
-  padding: 0;
-}
-main section .container-planes .plan-basico ul li {
-  margin-bottom: 10px;
-}
-main section .container-planes .plan-premium {
+main .sector-plan .container-planes .plan:nth-child(3) {
   background-color: #171010;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 35px;
-  margin: 40px;
-  margin-bottom: 80px;
 }
-main section .container-planes .plan-premium h2 {
-  padding-bottom: 10px;
-  color: white;
-}
-main section .container-planes .plan-premium ul {
-  list-style: none;
-  padding: 0;
-}
-main section .container-planes .plan-premium ul li {
-  margin-bottom: 10px;
-}
-main section .container-planes .plan-anual {
+main .sector-plan .container-planes .plan:nth-child(4) {
   background-color: #362222;
+}
+main .sector-plan .container-planes .plan {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 35px;
   margin: 40px;
   margin-bottom: 80px;
 }
-main section .container-planes .plan-anual h2 {
+main .sector-plan .container-planes .plan h2 {
   padding-bottom: 10px;
   color: white;
 }
-main section .container-planes .plan-anual ul {
+main .sector-plan .container-planes .plan ul {
   list-style: none;
   padding: 0;
 }
-main section .container-planes .plan-anual ul li {
+main .sector-plan .container-planes .plan ul li {
   margin-bottom: 10px;
 }
 main .banner-end {
@@ -301,9 +424,31 @@ main .banner-end p {
   }
 }
 @media screen and (max-width: 425px) {
-  main section .carousel {
-    margin: 0.625rem;
-    padding: 0.625rem;
+  main h1 {
+    font-size: 1.5rem;
+  }
+  main .parrafo-principal {
+    font-size: 1.125rem;
+  }
+  main .banner-index h2 {
+    font-size: 1.125rem;
+  }
+  main .banner-index p {
+    font-size: 0.875rem;
+  }
+  main .banner-index a {
+    font-size: 0.875rem;
+  }
+  main .item-index {
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+  }
+  main .item-index .item-seccion h3 {
+    font-size: 1rem;
+  }
+  main .item-index .item-seccion ul li {
+    font-size: 12px;
   }
   main .seccion section {
     flex-direction: column;
@@ -337,6 +482,12 @@ main .banner-end p {
   }
 }
 @media screen and (max-width: 375px) {
+  main h1 {
+    font-size: 1.25rem;
+  }
+  main .parrafo-principal {
+    font-size: 0.875rem;
+  }
   main .seccion section {
     flex-direction: column;
   }
@@ -360,8 +511,23 @@ main .banner-end p {
   }
 }
 @media screen and (max-width: 320px) {
+  main h1 {
+    font-size: 1rem;
+  }
+  main .parrafo-principal {
+    font-size: 0.75rem;
+  }
   main section .carousel {
     margin: 0.9375rem;
+  }
+  main .banner-index h2 {
+    font-size: 0.75rem;
+  }
+  main .banner-index p {
+    font-size: 0.5rem;
+  }
+  main .banner-index a {
+    font-size: 0.5rem;
   }
   main .seccion section article {
     padding: 0.9375rem;
@@ -387,6 +553,11 @@ main .banner-end p {
   }
   footer .footer-row .seccion-footer .quick-links li a {
     font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 1024) {
+  main .sectores {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media screen and (max-width: 768px) {
