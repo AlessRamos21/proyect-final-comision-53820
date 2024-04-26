@@ -48,6 +48,9 @@ body {
 .footer .container-footer .footer-row .seccion-footer p {
   margin-bottom: 10px;
 }
+.footer .container-footer .footer-row .seccion-footer a i {
+  color: white;
+}
 .footer .container-footer .footer-row .quick-links {
   list-style: none;
   padding: 0;
@@ -56,9 +59,6 @@ body {
   margin-bottom: 8px;
 }
 .footer .container-footer .footer-row .quick-links li a {
-  color: white;
-}
-.footer .container-footer .footer-row .quick-links li a i {
   color: white;
 }
 

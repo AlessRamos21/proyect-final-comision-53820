@@ -50,6 +50,11 @@ body{
                 p{
                     margin-bottom: 10px;
                 }
+                a{
+                    i{
+                        color: white;
+                    }
+                }
             }
             .quick-links{
                 list-style: none;
@@ -58,9 +63,6 @@ body{
                     margin-bottom: 8px;
                     a{
                         color: $letra-color;
-                        i{
-                            color: white;
-                        }
                     }
                 }
             }
